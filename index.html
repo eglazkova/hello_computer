@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Secret Friend</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    
+    <style>
+
+      *, *::after, *::before {
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+      }
+
+      html{
+        font-size: 72px;
+      }
+
+      input {
+    line-height: 72px;
+    font-size: 48px;
+}
+      body{
+         font-family: 'Syne Mono', sans-serif;
+      
+      }
+
+      button {
+        font-size: 36px;
+        color: crimson;
+    
+      }
+
+      .nav{
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        background-color:aquamarine;
+      }
+      .nav__list{
+        display:flex;
+        justify-content: flex-end;
+        list-style: none;
+      }
+      .nav__item > a {
+        color: crimson;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      .nav__item:not(:last-child){
+        margin-right:1rem;
+      }
+
+      .header{
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        height: 80vh;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-size:cover; 
+        background-repeat:no-repeat;
+      }
+
+      .main{
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        height: 50vh;
+        display:flex;
+      }
+
+      @media screen and (max-width:500px) {
+        .main {
+          flex-direction: column;
+          height:auto;
+        }
+      }
+
+      .footer{
+        padding: 2rem 1rem 2rem 1rem;
+        display: flex;
+        justify-content: space-around;
+      }
+      .footer__section{
+        width:40%;
+      }
+      .footer__content{
+        text-align:left;
+      }
+
+      .debug{
+        border: 1px transparent;
+      }
+
+      .menu{
+        
+        width:25%;
+        height:100%;
+      }
+      @media screen and (max-width:700px) {
+        .menu{
+          width:100%;
+        }
+      }
+
+      .content{
+        background-color: pink;
+        width:50%;
+        height:100%;
+      }
+      @media screen and (max-width:700px) {
+        .content{
+          width:100%;
+        }
+      }
+
+      .aside{
+        background-color: blueviolet;
+        width:25%;
+        height:100%;
+      }
+      @media screen and (max-width:700px) {
+        .aside{
+          width:100%;
+        }
+      }
+      
+
+      
+
+    </style>
+    
+  </head>
+
+  <body>
+      
+     
+
+    <nav class="nav debug">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/about" target="_blank" noreferrer>About</a></li>
+          <li class="nav__item"><a href="/contact" target="_blank" noreferrer>Contact</a></li>
+        </ul>
+      </nav>
+    <div id="app">
+      
+      <header class="header debug">
+        <h1 class="header__title">Type Your Secret</h1>
+       <input type="text" id="text-input" size="40">
+       <div>
+        <button id="button">SHARE</button> </div>
+
+        <h2>or</h2>
+     
+      <div><button id="button2">GET A SECRET</button></div>
+       
+      <script src="../shared/webrtc_peer_client.js"></script>
+        <script src="script.js"></script>
+        
+      
+      </header>
+      <main class="main debug">
+        <img src="dog_1.jpg" alt="a dog close up with a purple background" width="600" height="400">
+        <img src="dog_2.jpg" alt="a dog close up with a purple background" width="650" height="400">
+        <img src="dog_3.jpg" alt="a dog close up with a purple background" width="520" height="600">
+      </main>
+      <footer class="footer debug">
+        <section class="footer__section"> <p class="footer__content">Talk To Us!</p> </section> 
+        
+        
+      </footer>
+    </div>
+  </body>
+</html>
+
